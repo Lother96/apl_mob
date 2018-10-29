@@ -9,7 +9,7 @@
   <meta name="Author" content=" Hubert Pawłowski sp. Informatyka Gospodarcza " />
   <meta name="Generator" content="kED" />
 
-  <title> Zadanie Technologie Informacyjne </title>
+  <title> Zadanie Aplikacje Mobilne </title>
 
   <link rel="stylesheet" href="styl.css" type="text/css" />
 </head>
@@ -22,7 +22,7 @@
 </div>
 <div id="menupoz">
 <ul>
-	<li><a href="index.html">INCLUDE I REQUIRE</a></li>
+	<li><a href="index.html">STRONA GLOWNA</a></li>
   <li><a href="pierwiastkowanie.html">PIERWIASTKOWANIE</a></li>
 </ul>
 
@@ -31,76 +31,17 @@
 <div id="zawartosc">
 <p id="start">Include() i Require()</p>
 
-<p class="mini_tytul">Include()</p>
-<p class="tekst">Instrukcja include() pozwala wczytać plik, którego adres został podany w jej argumencie. Służy ona do wczytania i wykonania kodu z określonego pliku w trakcie wykonywania skryptu.</p>
-<p class="tekst">Składnia instrukcji:</p>
-<p class="tekst"><strong>Include()</strong> -  gdzie w nawiasie wpisujemy nazwę pliku, który ma zostać dołączony np. Include("plik1.php")</p>
+<p class="mini_tytul">Aplikacje Mobilne</p>
+<p class="tekst">Aplikacja mobilna (ang. mobile software / mobile application) – ogólna nazwa dla oprogramowania działającego na urządzeniach przenośnych, takich jak telefony komórkowe, smartfony, palmtopy czy tablety.</p>
+<p class="tekst">Przykładem zastosowania aplikacji mobilnych jest tzw. „bankowość mobilna”, która ułatwia klientom dostęp do konta bankowego z możliwością dokonywania operacji bankowych.</p>
+<p class="tekst">W zależności od celu oraz sposobu korzystania z nich, aplikacje mobilne można podzielić na:</p>
+	<ul>
+		<li>samodzielne – działające bez dostępu do internetu;</li>
+		<li>klienckie – na potrzeby klienta, łączące z odpowiednim serwerem przez internet;</li>
+		<li>internetowe – w postaci stron mobilnych;</li>
+		<li>gry komputerowe.</li>
+	</ul>
 
-<p class="tytulek">Przykład</p>
-<p class="tekst">Mamy plik, którego kod wygląda następująco (w body):</p>
-<textarea rows="13" cols="50" readonly="readonly">
-
-Pierwsza linia
-<?php 
-include("tekst1.php"); 
-?>
-</textarea>
-<p class="tekst">Tekst pliku tekst.php wygląda natomiast tak:</p>
-<textarea rows="13" cols="50" readonly="readonly">
-Druga linia</textarea>
-<p class="tekst">W rezultacie <a href="zad1.php">otrzymamy</a></p>
-
-<p class="tytulek">Include_once()</p>
-<p class="tekst"><strong>Include_once()</strong>, różni się od Include() tym, że jeżeli kod z pliku został już dołączony, to nie zostanie on dołączony ponownie, przy kolejnym obiegu.</p>
-
-<p class="mini_tytul">Require()</p>
-<p class="tekst">Instrukcja Require() posiada praktycznie identyczną zasadę diałania co Include(), lecz różni się kilkoma cechami:</p>
-<ol class="tekst">
-<li>Instrukcja <strong>Require()</strong>  dołącza kod z pliku niezależnie od tego, czy spełnione zostały warunki w instrukcjach warunkowych,</li>
-<li>Instrukcja <strong>Include()</strong>  wstawia zawsze aktualną zawartość pliku, a <strong>Require()</strong> - tylko dane z pierwszego przebiegu,</li>
-<li>Instrukcja <strong>Include()</strong>, podczas próby załączenia pliku który nie istnieje wyda ostrzeżenie, <strong>Require()</strong>  - wyda "Fatal Error", co spowoduje, że działanie skryptu zostanie przerwane.</li>
-</ol><br/>
-
-<p class="tekst">Składnia instrukcji:</p>
-<p class="tekst"><strong>Require()</strong> - gdzie w nawiasie wpisujemy nazwę pliku, który ma zostać dołączony np. require(moj_plik.php)</p>
-
-<p class="tytulek">Przykład</p>
-<p class="tekst"><strong>Działanie instukcji Require():</strong></p>
-<p class="tekst">Mamy plik, którego zawartość wygląda następująco:</p>
-<textarea rows="13" cols="50" readonly="readonly">
-<?php
-
-function zadanie_req(){
-    require('zad3.php');
-    return $zadanie_req;
-}
-
-for($a=1;$a<=5;$a++){
-    echo zadanie_req()."<br>";
-}
-
-</textarea>
-<p class="tekst">W pliku zad3.php mamy następujący kod:</p>
-<textarea rows="13" cols="50" readonly="readonly">
-<?php
-$zadanie_req = 'linia tekstu';
-?>
-</textarea>
-<p class="tekst">W rezultacie <a href="tekst3.php">otrzymamy</a></p><br/>
-
-
-<p class="tekst"><strong>Przykład działania Fatal Erroru:</strong></p>
-<p class="tekst">Mamy plik.php, w którym kod wygląda następująco (w body):</p>
-
-<textarea rows="13" cols="50" readonly="readonly">
-Pierwsza linia
-<?php require("zad2.php"); ?>
-</textarea>
-
-<p class="tekst">Natomiast pliku o nazwie zad2.php nie ma. W rezultacie otrzymamy <a href="tekst2.php">następujący wynik</a></p><br/>
-
-<p class="tytulek">Require_once()</p>
-<p class="tekst">Zasada działania <strong>Require_once()</strong> jest identyczna, co require(). Jedyną różnicą jest to, że instrukcja sprawdzi, czy plik został już dołączony. Jeśli tak - nie będzie dołączał go ponownie.</p>
 </div>
 </div>
 <div id="stopka">
