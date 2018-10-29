@@ -102,9 +102,8 @@ display: block;}
    div#menupion { width: auto;}
 	 div#zawartosc {width: auto;}
 img#logo{
+	display: none;
 }
-	div#container{
-		background: grey;
 }
 @media only screen and (max-width: 600px) {
 div#container{
@@ -112,6 +111,8 @@ margin-left: 0;
 margin-right: 0;}
 div#srodek{
 display: block;}
+img#logo{
+	display: none;}
    div#menupion { width: auto;}
 	 div#zawartosc {width: auto;}
 	 div#gnag{
