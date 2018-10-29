@@ -111,7 +111,7 @@ margin-left: 0;
 margin-right: 0;}
 div#srodek{
 display: block;}
-img#logo{
+img.logo{
 	display: none;}
    div#menupion { width: auto;}
 	 div#zawartosc {width: auto;}
