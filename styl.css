@@ -103,6 +103,8 @@ display: block;}
 	 div#zawartosc {width: auto;}
 img#logo{
 }
+	div#container{
+		background: grey;
 }
 @media only screen and (max-width: 600px) {
 div#container{
