@@ -6,7 +6,7 @@
   <meta http-equiv="Content-type" content="application/xhtml+xml; charset=utf-8" />
   <meta name="Description" content=" Zadanie technologie informacyjne " />
   <meta name="Keywords" content=" Zadanie, technologie, informacyjne " />
-  <meta name="Author" content=" Hubert PawĹ‚owski sp. Informatyka Gospodarcza " />
+  <meta name="Author" content=" Hubert Pawłowski sp. Informatyka Gospodarcza " />
   <meta name="Generator" content="kED" />
 
   <title> Zadanie Technologie Informacyjne </title>
@@ -32,12 +32,12 @@
 <p id="start">Include() i Require()</p>
 
 <p class="mini_tytul">Include()</p>
-<p class="tekst">Instrukcja include() pozwala wczytaÄ‡ plik, ktĂłrego adres zostaĹ‚ podany w jej argumencie. SĹ‚uĹĽy ona do wczytania i wykonania kodu z okreĹ›lonego pliku w trakcie wykonywania skryptu.</p>
-<p class="tekst">SkĹ‚adnia instrukcji:</p>
-<p class="tekst"><strong>Include()</strong> -  gdzie w nawiasie wpisujemy nazwÄ™ pliku, ktĂłry ma zostaÄ‡ doĹ‚Ä…czony np. Include("plik1.php")</p>
+<p class="tekst">Instrukcja include() pozwala wczytać plik, którego adres został podany w jej argumencie. Służy ona do wczytania i wykonania kodu z określonego pliku w trakcie wykonywania skryptu.</p>
+<p class="tekst">Składnia instrukcji:</p>
+<p class="tekst"><strong>Include()</strong> -  gdzie w nawiasie wpisujemy nazwę pliku, który ma zostać dołączony np. Include("plik1.php")</p>
 
-<p class="tytulek">PrzykĹ‚ad</p>
-<p class="tekst">Mamy plik, ktĂłrego kod wyglÄ…da nastÄ™pujÄ…co (w body):</p>
+<p class="tytulek">Przykład</p>
+<p class="tekst">Mamy plik, którego kod wygląda następująco (w body):</p>
 <textarea rows="13" cols="50" readonly="readonly">
 
 Pierwsza linia
@@ -45,28 +45,28 @@ Pierwsza linia
 include("tekst1.php"); 
 ?>
 </textarea>
-<p class="tekst">Tekst pliku tekst.php wyglÄ…da natomiast tak:</p>
+<p class="tekst">Tekst pliku tekst.php wygląda natomiast tak:</p>
 <textarea rows="13" cols="50" readonly="readonly">
 Druga linia</textarea>
 <p class="tekst">W rezultacie <a href="zad1.php">otrzymamy</a></p>
 
 <p class="tytulek">Include_once()</p>
-<p class="tekst"><strong>Include_once()</strong>, rĂłĹĽni siÄ™ od Include() tym, ĹĽe jeĹĽeli kod z pliku zostaĹ‚ juĹĽ doĹ‚Ä…czony, to nie zostanie on doĹ‚Ä…czony ponownie, przy kolejnym obiegu.</p>
+<p class="tekst"><strong>Include_once()</strong>, różni się od Include() tym, że jeżeli kod z pliku został już dołączony, to nie zostanie on dołączony ponownie, przy kolejnym obiegu.</p>
 
 <p class="mini_tytul">Require()</p>
-<p class="tekst">Instrukcja Require() posiada praktycznie identycznÄ… zasadÄ™ diaĹ‚ania co Include(), lecz rĂłĹĽni siÄ™ kilkoma cechami:</p>
+<p class="tekst">Instrukcja Require() posiada praktycznie identyczną zasadę diałania co Include(), lecz różni się kilkoma cechami:</p>
 <ol class="tekst">
-<li>Instrukcja <strong>Require()</strong>  doĹ‚Ä…cza kod z pliku niezaleĹĽnie od tego, czy speĹ‚nione zostaĹ‚y warunki w instrukcjach warunkowych,</li>
-<li>Instrukcja <strong>Include()</strong>  wstawia zawsze aktualnÄ… zawartoĹ›Ä‡ pliku, a <strong>Require()</strong> - tylko dane z pierwszego przebiegu,</li>
-<li>Instrukcja <strong>Include()</strong>, podczas prĂłby zaĹ‚Ä…czenia pliku ktĂłry nie istnieje wyda ostrzeĹĽenie, <strong>Require()</strong>  - wyda "Fatal Error", co spowoduje, ĹĽe dziaĹ‚anie skryptu zostanie przerwane.</li>
+<li>Instrukcja <strong>Require()</strong>  dołącza kod z pliku niezależnie od tego, czy spełnione zostały warunki w instrukcjach warunkowych,</li>
+<li>Instrukcja <strong>Include()</strong>  wstawia zawsze aktualną zawartość pliku, a <strong>Require()</strong> - tylko dane z pierwszego przebiegu,</li>
+<li>Instrukcja <strong>Include()</strong>, podczas próby załączenia pliku który nie istnieje wyda ostrzeżenie, <strong>Require()</strong>  - wyda "Fatal Error", co spowoduje, że działanie skryptu zostanie przerwane.</li>
 </ol><br/>
 
-<p class="tekst">SkĹ‚adnia instrukcji:</p>
-<p class="tekst"><strong>Require()</strong> - gdzie w nawiasie wpisujemy nazwÄ™ pliku, ktĂłry ma zostaÄ‡ doĹ‚Ä…czony np. require(moj_plik.php)</p>
+<p class="tekst">Składnia instrukcji:</p>
+<p class="tekst"><strong>Require()</strong> - gdzie w nawiasie wpisujemy nazwę pliku, który ma zostać dołączony np. require(moj_plik.php)</p>
 
-<p class="tytulek">PrzykĹ‚ad</p>
-<p class="tekst"><strong>DziaĹ‚anie instukcji Require():</strong></p>
-<p class="tekst">Mamy plik, ktĂłrego zawartoĹ›Ä‡ wyglÄ…da nastÄ™pujÄ…co:</p>
+<p class="tytulek">Przykład</p>
+<p class="tekst"><strong>Działanie instukcji Require():</strong></p>
+<p class="tekst">Mamy plik, którego zawartość wygląda następująco:</p>
 <textarea rows="13" cols="50" readonly="readonly">
 <?php
 
@@ -80,7 +80,7 @@ for($a=1;$a<=5;$a++){
 }
 
 </textarea>
-<p class="tekst">W pliku zad3.php mamy nastÄ™pujÄ…cy kod:</p>
+<p class="tekst">W pliku zad3.php mamy następujący kod:</p>
 <textarea rows="13" cols="50" readonly="readonly">
 <?php
 $zadanie_req = 'linia tekstu';
@@ -89,22 +89,22 @@ $zadanie_req = 'linia tekstu';
 <p class="tekst">W rezultacie <a href="tekst3.php">otrzymamy</a></p><br/>
 
 
-<p class="tekst"><strong>PrzykĹ‚ad dziaĹ‚ania Fatal Erroru:</strong></p>
-<p class="tekst">Mamy plik.php, w ktĂłrym kod wyglÄ…da nastÄ™pujÄ…co (w body):</p>
+<p class="tekst"><strong>Przykład działania Fatal Erroru:</strong></p>
+<p class="tekst">Mamy plik.php, w którym kod wygląda następująco (w body):</p>
 
 <textarea rows="13" cols="50" readonly="readonly">
 Pierwsza linia
 <?php require("zad2.php"); ?>
 </textarea>
 
-<p class="tekst">Natomiast pliku o nazwie zad2.php nie ma. W rezultacie otrzymamy <a href="tekst2.php">nastÄ™pujÄ…cy wynik</a></p><br/>
+<p class="tekst">Natomiast pliku o nazwie zad2.php nie ma. W rezultacie otrzymamy <a href="tekst2.php">następujący wynik</a></p><br/>
 
 <p class="tytulek">Require_once()</p>
-<p class="tekst">Zasada dziaĹ‚ania <strong>Require_once()</strong> jest identyczna, co require(). JedynÄ… rĂłĹĽnicÄ… jest to, ĹĽe instrukcja sprawdzi, czy plik zostaĹ‚ juĹĽ doĹ‚Ä…czony. JeĹ›li tak - nie bÄ™dzie doĹ‚Ä…czaĹ‚ go ponownie.</p>
+<p class="tekst">Zasada działania <strong>Require_once()</strong> jest identyczna, co require(). Jedyną różnicą jest to, że instrukcja sprawdzi, czy plik został już dołączony. Jeśli tak - nie będzie dołączał go ponownie.</p>
 </div>
 </div>
 <div id="stopka">
-<p>Copyright by Hubert PawĹ‚owski sp. Informatyka  Gospodarcza</p>
+<p>Copyright by Hubert Pawłowski sp. Informatyka Gospodarcza</p>
 </div>
 </div>
 
